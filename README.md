@@ -2,6 +2,10 @@
 
 A data-driven dashboard built using **Python, Streamlit, and MySQL** to analyze student performance and evaluate placement readiness.
 
+## 🌐 Live App
+
+https://placementeligibilitydashboard-xyz.streamlit.app
+
 ---
 
 ## 🚀 Overview
