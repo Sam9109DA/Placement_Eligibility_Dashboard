@@ -26,3 +26,12 @@ SELECT placement_status,
 FROM student_performance sp
 JOIN placements p ON sp.student_id = p.student_id
 GROUP BY placement_status;
+
+-- Softskill vs Placement
+ SELECT p.placement_status,
+           AVG(ss.communication_score) AS avg_communication_score,
+           AVG(ss.teamwork_score) AS avg_teamwork_score
+           FROM placements p
+           JOIN soft_skills ss 
+           ON p.student_id = ss.student_id
+           GROUP BY p.placement_status;

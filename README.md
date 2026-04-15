@@ -1,51 +1,83 @@
 # 📊 Placement Eligibility Dashboard
 
-## 🧠 Overview
-
-This project is a data-driven dashboard built using Python, Streamlit, and MySQL.
-
-It helps analyze student performance and determine placement readiness using metrics like CodeKata, Career Track, and Soft Skills.
+A data-driven dashboard built using **Python, Streamlit, and MySQL** to analyze student performance and evaluate placement readiness.
 
 ---
 
-## ⚙️ Tech Stack
+## 🚀 Overview
 
-- Python
-- Streamlit
-- Pandas
-- MySQL
-- Faker
+This project helps identify which students are ready for placements based on key metrics like:
 
----
+- CodeKata Score
+- Career Track Performance
+- Soft Skills (Communication & Teamwork)
+- Placement Status Trends
 
-## 🔥 Features
-
-- Filter students based on CodeKata & Career Track scores
-- View eligible students
-- Search students by name
-- Download results as CSV
+It provides **interactive filtering, real-time insights, and visual analytics** to support decision-making.
 
 ---
 
-## 📊 Insights Dashboard
+## 🧠 Key Insights
 
-- Eligibility Percentage
-- Average CodeKata Score
-- Top 5 Students
-- Placement Status Distribution
-- Performance vs Placement
-- Soft Skills vs Placement (Dynamic Insight)
+- Not all high scorers get placed → Technical skills alone are not enough
+- Career Track & Soft Skills influence placement outcomes
+- Placement distribution helps identify overall readiness gap
+- Performance comparison highlights real-world patterns
 
 ---
 
-## 🧠 Key Learning
+## ⚙️ Features
 
-This project shows that placement is influenced by multiple factors and not just coding performance.
+- 🎯 Filter students by CodeKata & Career Track scores
+- 📈 Eligibility percentage calculation
+- 🧮 Average performance metrics
+- 🏆 Top students ranking
+- 📊 Placement status distribution
+- 🔍 Search students by name
+- 📥 Download results as CSV
+- 📉 Score distribution visualization
 
 ---
 
-## 🚀 How to Run
+## 🛠️ Tech Stack
+
+- **Python**
+- **Streamlit**
+- **Pandas**
+- **MySQL**
+- **SQL (Aggregations, Joins, Group By)**
+- **Faker** 
+
+## 🧠 Concepts Demonstrated
+
+- Object-Oriented Programming (OOP)
+- Data Analysis & Visualization
+- Dashboard Development
+- SQL Query Optimization
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Dashboard Overview
+![Dashboard]!(<Dashboard (2)-1.png>)
+
+### 📊 Insights Panel
+![Insights]!(<Insights-1.png>)
+
+### 📈 Performance Charts
+![Chart 1]!(<Chart 1-1.png>)
+![Chart 2]!(<Chart 2-1.png>)
+
+### 🏆 Top Students Output
+![Results]!(<Result-1.png>)
+
+---
+
+## 🧪 How to Run
+
+1. Clone the repository:
 
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
+git clone https://github.com/Sam9109DA/Placement_Eligibility_Dashboard.git
+cd Placement_Eligibility_Dashboard

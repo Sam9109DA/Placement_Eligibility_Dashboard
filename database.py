@@ -1,5 +1,4 @@
-
-import mysql.connector
+import sqlite3
 
 class DatabaseConnection:
     def __init__(self):
@@ -8,16 +7,11 @@ class DatabaseConnection:
 
     def connect(self):
         try:
-            self.conn = mysql.connector.connect(
-                host="localhost",
-                user="root",
-                password="",
-                database="placement_eligibility_db"
-            )
+            self.conn = sqlite3.connect("placement.db")
             self.cursor = self.conn.cursor()
-            print("Database connection established.")
+            print("SQLite database connected.")
             return self.conn, self.cursor
-        except mysql.connector.Error as err:
+        except Exception as err:
             print(f"Error connecting to database: {err}")
             return None, None
 
