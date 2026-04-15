@@ -4,7 +4,7 @@ A data-driven dashboard built using **Python, Streamlit, and MySQL** to analyze 
 
 ## 🌐 Live App
 
-https://placementeligibilitydashboard-xyz.streamlit.app
+https://placementeligibilitydashboard-kzvz4egyzpcewhk7ubkfdq.streamlit.app/
 
 ---
 
