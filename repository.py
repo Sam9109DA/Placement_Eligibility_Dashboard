@@ -16,7 +16,7 @@ class StudentRepository:
         return self.cursor.fetchall()
 
     def get_student_by_id(self, student_id):
-        query = "SELECT * FROM students WHERE student_id = %s"
+        query = "SELECT * FROM students WHERE student_id = ?"
         self.cursor.execute(query, (student_id,))
         return self.cursor.fetchone() 
     
@@ -26,8 +26,8 @@ class StudentRepository:
         FROM students s
         JOIN student_performance sp
         ON s.student_id = sp.student_id
-        WHERE sp.codekata_score >= %s
-        AND sp.career_track_score >= %s
+        WHERE sp.codekata_score >= ?
+        AND sp.career_track_score >= ?
         """
         self.cursor.execute(query, (min_codekata, min_ct))
         return self.cursor.fetchall()
