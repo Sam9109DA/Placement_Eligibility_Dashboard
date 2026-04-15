@@ -73,6 +73,18 @@ It provides **interactive filtering, real-time insights, and visual analytics** 
 ![Results]!(<Result-1.png>)
 
 ---
+## ⚙️ Database Setup
+
+This project uses **SQLite** for deployment compatibility.
+
+- Originally designed with MySQL
+- Migrated to SQLite for Streamlit Cloud hosting
+
+Run the following to initialize database:
+
+```bash
+python init_db.py
+
 
 ## 🧪 How to Run
 
